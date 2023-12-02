@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+        .container{
+            min-height: 100vh;
+            background: #08071d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(https://st3.depositphotos.com/1325352/34965/v/1600/depositphotos_349658044-stock-illustration-background-cherry-blossom-spring-flower.jpg) no-repeat center center/cover;
+
+        }
+        .container form{
+            width: 670px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, .1);
+            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+        }
+        .container form h1{
+            color: #460547;
+            font-weight: 500;
+            margin-top: 20px;
+            width: 500px;
+            text-align: center;
+            font-size: 3rem;
+        }
+        .container form input{
+            width: 290px;
+            height: 40px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            background: none;
+            border-bottom: 2px solid #727070;
+
+        }
+        .container form input ::placeholder{
+            color: #494646;
+        }
+        .container form #LastName,
+        .container form #mobile{
+            margin-left: 20px;
+        }
+        .container form h4{
+            color: #424040;
+            font-weight: 300;
+            width: 600px;
+            margin-top: 20px;
+        }
+        .container form textarea{
+            background: none;
+            border: none;
+            border-bottom: 2px solid #6d6969;
+            color: #494242;
+            font-weight: 200;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            min-width: 600px;
+            max-width: 600px;
+            min-height: 80px;
+            max-height: 80px;
+        }
+        textarea::-webkit-scrollbar{
+            width: 2em;
+
+        }
+        textarea ::-webkit-scrollbar-thumb{
+            background-color: rgba(194, 194, 194, .713);
+        
+        }
+        .container form #Button{
+            align-items: center;
+            border: none;
+            background: #ef86d8;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            width: 100px;
+            padding: 0;
+            margin-right: 35px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .container form #Button :hover{
+            opacity: 0.7;
+        }
+
+
+        .register a{
+            text-decoration: none;
+            color: azure;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: rgb(208, 45, 99);
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+
+
+        .footer .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            background: rgb(255, 249, 239);
+        }
+        .footer .box-container .box{
+            flex: 1 1 15rem;
+        }
+        .footer .box-container .box h3{
+            color: #030303;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        .footer .box-container .box a{
+            display: block;
+            color: #666;
+            font-size: 1.5rem;
+            padding: 1rem 0;
+        }
+        .footer .box-container .box a :hover{
+            color: #ef86d8;
+            text-decoration: underline;
+        }
+        .footer .box-container .box img{
+            margin-top: 1rem;
+        }
+        .footer .credit{
+            text-align: center;
+            align-items: center;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            padding-top: 2.5rem;
+            font-size: 1.5rem;
+            color: #333;
+            border-top: .1rem solid rgba(0, 0, 0, .1);
+        }
+        .footer .credit span{
+            color: #ef86d8;
+        }
+
+
+        .Home a{
+            margin-left: 43rem;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(4, 4, 4);
+            padding: 10px 20px;
+            font-size: 10px;
+            background: rgb(238, 65, 123);
+            border-radius: 5px;
+            transition: 0.4s;
+        }
+        .Home a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section class="contact" id="contact">
+
+
+        <div class="container">
+            <form>
+                <h1>Contact us</h1>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="LastName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="mobile" placeholder="Mobile" required>
+                <h4>Type Your Message Here...!!</h4>
+                <textarea required></textarea>
+                <input type="submit" value="Send" id="Button">
+            </form>
+        </div>
+
+
+        <div class="Home">
+        <a href="LandingPage.html" class="Home">Home</a>
+       </div>
+       
+
+    </section>
+     
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Review</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#">My Account</a>
+            <a href="#">My Orders</a>
+            <a href="#">My Favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Japan</a>
+            <a href="#">France</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">example@gmail.com</a>
+            <a href="#">Mumbai, India-400104</a>
+            <img src="" alt="">
+        </div>
+
+       <div class="credit">created by <span>Ms. Priya Mankar</span> |all rights reserved|</div>
+
+    </div>
+
+</section>
+
+
+
+
+    
+</body>
+</html>

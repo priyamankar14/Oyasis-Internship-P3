@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style type="text/css">
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(244, 207, 244);
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.head span{
+    color: #b02f78;
+}
+.heading h1 ::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: crimson;
+}
+.heading p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+    font-family: cursive;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    border-radius: 500px;
+}
+
+
+.about-image:hover img{
+    transition: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    font-family: cursive;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0f0d0d;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0,3s ease;
+}
+.about-content .read-more:hover{
+    background-color: #b02f78;
+}
+@media screen and (max-width: 768px) {
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+
+.Home a{
+            margin-left: 45rem;
+            text-align: center;
+            text-decoration: none;
+            color: azure;
+            padding: 10px 20px;
+            font-size: 10px;
+            background: rgb(238, 65, 123);
+            border-radius: 5px;
+            transition: 0.4s;
+        }
+        .Home a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+   </style>
+</head>
+<body>
+    <div class="heading">
+        <h1 class="head"> <span> About</span> Us</h1>
+        <p>
+            Flowers convey the feelings of love, romance, and happiness in the best worthy manner. On a particular day, send a bouquet of flowers online with Flower Aura to express myriad emotions to your special one. We have a vast collection of flower bouquet in various flower types.
+        </p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+               
+                <img src="https://media.istockphoto.com/id/1179997588/photo/you-dont-need-someone-else-to-buy-you-flowers.jpg?s=612x612&w=0&k=20&c=88jFYgg_VWU3Fv0hcYfH5GwhQ6PhLxNHIwx2dmAatq0=" alt="">
+            </div>
+            <div class="about-content">
+                <h2>Why Choose Flower Aura To Order Bouquet of Flowers Online?</h2>
+                <p>
+                    Whenever the thought of gifting a bouquet of Flowers comes to your mind Flower Aura should always be on your list. The reputed online florist has been serving fresh bouquets of flowers for every occasion and celebration for over a decade. What makes us stand out of all is our fresh floral arrangements and unique flowers and we know bits and pieces of the flower business and the sentiments of each customer attached to us. One can easily place bouquets of flowers online with our user-friendly website and even the app. Each of our flower bouquets is one of a kind and available in a plethora of options wrapped in love for your loved ones. We do not just promise to offer such creatively crafted flower bouquets that are versatile enough to be gifted across every special occasion but also excellent quality and freshness to leave your loved ones in awe of you.
+
+                </p>
+                <a href="" class="read-more">Read More</a>
+
+            </div>
+
+            
+
+        </section>
+
+    </div><br><br>
+
+    <div class="Home">
+        <a href="LandingPage.html" class="Home">Home</a>
+       </div>
+
+
+</body>
+</html>
